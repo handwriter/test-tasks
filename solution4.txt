@@ -26,3 +26,11 @@ class SomeClass
  }
 }
 
+public static class SomeExtensions {
+    public static ApiSetup<T> SetupObjectA<T>(this ApiSetup<T> setup) where T : ObjectA {
+        return setup;
+    }
+    public static ApiSetup<T> SetupObjectB<T>(this ApiSetup<T> setup) where T : ObjectB {
+        return setup;
+    }
+}
